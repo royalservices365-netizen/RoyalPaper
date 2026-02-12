@@ -1,23 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K16DWEG3S4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-K16DWEG3S4');
-    <!-- End Google Analytics -->
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Royal Paper - Premium Brown Paper Rolls | Pune</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Added favicon -->
-    <link rel="R logo 1.png">
-    
+    <!-- Swiper CSS for sliding carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
         /* Base Styles & Reset */
         * {
@@ -155,7 +144,6 @@
         }
 
         /* ============ HERO SECTION WITH BACKGROUND ============ */
-        /* Option 2: Paper Roll Stack Background */
         .hero {
     background:
         linear-gradient(
@@ -163,11 +151,9 @@
             rgba(255, 248, 240, 0.55)
         ),
         url('https://uploads.onecompiler.io/44acmuzzm/44acmx6ah/paper%20roll%203D.png');
-
-    background-size: 100%;   /* makes image clearer */
-    background-position: center; /* unchanged */
+    background-size: 100%;
+    background-position: center;
     background-repeat: no-repeat;
-
     padding: 180px 0 100px;
     text-align: center;
     position: relative;
@@ -356,15 +342,18 @@
             margin-bottom: 1rem;
         }
 
-        /* Products Section */
+        /* Products Section - Swiper Carousel */
         .products {
             background-color: #f5f0eb;
         }
 
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2.5rem;
+        .swiper {
+            width: 100%;
+            padding: 20px 10px 60px;
+        }
+
+        .swiper-slide {
+            height: auto;
         }
 
         .product-card {
@@ -373,6 +362,9 @@
             overflow: hidden;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
         }
 
         .product-card:hover {
@@ -383,10 +375,38 @@
             height: 220px;
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
+            flex-shrink: 0;
         }
 
         .product-content {
             padding: 25px;
+            flex-grow: 1;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #8B4513 !important;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #8B4513 !important;
+            background: rgba(255,255,255,0.8);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+            background: white;
         }
 
         /* Why Choose Us */
@@ -520,6 +540,35 @@
             color: white;
         }
 
+        /* ============ NEW SOCIAL ICONS STYLES (Footer Only, Icons Only) ============ */
+        .social-icons {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            align-items: center;
+            margin: 25px 0 15px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1.8rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            background: #8B4513;
+            color: white;
+            transform: translateY(-5px);
+        }
+
         .copyright {
             margin-top: 2rem;
             padding-top: 1.5rem;
@@ -622,6 +671,11 @@
                 width: 100%;
                 max-width: 300px;
             }
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                display: none !important;
+            }
         }
 
         @media (max-width: 480px) {
@@ -637,6 +691,12 @@
             .hero {
                 padding: 150px 0 80px;
                 min-height: 90vh;
+            }
+            
+            .social-icons a {
+                width: 42px;
+                height: 42px;
+                font-size: 1.6rem;
             }
         }
     </style>
@@ -686,7 +746,7 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <h1>Premium Brown Paper Rolls for Paper Bags, Pouches & Corrugated Boxes</h1>
+                <h1>Premium MG & MF Paper Rolls for Paper Bags, Pouches & Corrugated Boxes</h1>
                 <p>7+ years of trusted supply in Pune. Consistent quality. Competitive pricing. Reliable delivery.</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn">Get Your Quote</a>
@@ -700,18 +760,17 @@
         </div>
     </section>
 
-    <!-- Rest of the website remains exactly the same -->
     <!-- About Section -->
     <section id="about">
         <div class="container">
             <div class="section-title">
                 <h2>About Us</h2>
-                <p>Leading paper trading company serving Pune's packaging industry</p>
+                <p>Leading Paper Trading Company Serving Pune's Packaging Industry</p>
             </div>
             <div class="about-content">
                 <div>
                     <h3>Royal Paper - Your Trusted Partner</h3>
-                    <p>With 7+ years of experience in paper trading, Royal Paper has established itself as Pune's leading supplier of premium brown and kraft paper rolls for packaging manufacturers.</p>
+                    <p>With 7+ years of experience in Paper Trading, Royal Paper has established itself as Pune's leading supplier of premium brown and kraft Paper Rolls for packaging manufacturers.</p>
                     <p>Founded by Nitin Sable, we focus on delivering consistent quality, competitive pricing, and reliable delivery to paper bag, pouch, and corrugated box manufacturers across Maharashtra.</p>
                     <div class="about-stats">
                         <div class="stat-box">
@@ -753,53 +812,102 @@
         </div>
     </section>
 
-    <!-- Products Section -->
+    <!-- Products Section with Swiper Slider (SLIDING PHOTOS) -->
     <section class="products" id="products">
         <div class="container">
             <div class="section-title">
                 <h2>Our Products</h2>
-                <p>Premium paper rolls for packaging manufacturers</p>
+                <p>Premium MG Paper Rolls for Packaging Manufacturers</p>
             </div>
-            <div class="product-grid">
-                <div class="product-card">
-                    <div class="product-img" style="background-image: url('https://uploads.onecompiler.io/44acmuzzm/44af24zfe/Kraft%20Paper%20Rolls.png');"></div>
-                    <div class="product-content">
-                        <h3>Brown Paper Rolls</h3>
-                        <p>Premium quality brown kraft paper for eco-friendly packaging solutions</p>
-                        <ul>
-                            <li>Ideal for paper bags and pouches</li>
-                            <li>Available in multiple GSM options</li>
-                            <li>Standard roll widths: 12-48 inches</li>
-                            <li>Excellent strength and durability</li>
-                        </ul>
+            <!-- Swiper Container -->
+            <div class="swiper productSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1: Brown Paper Rolls -->
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-img" style="background-image: url('https://uploads.onecompiler.io/44acmuzzm/44af24zfe/Kraft%20Paper%20Rolls.png');"></div>
+                            <div class="product-content">
+                                <h3>Brown Paper Rolls</h3>
+                                <p>Premium quality MG and MF Kraft Paper for Eco-Friendly Packaging Solutions</p>
+                                <ul>
+                                    <li>Ideal for paper bags and pouches</li>
+                                    <li>Available in multiple GSM options</li>
+                                    <li>Standard roll widths: 12-48 inches</li>
+                                    <li>Excellent strength and durability</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2: MG Paper Rolls -->
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-img" style="background-image: url('https://uploads.onecompiler.io/44acmuzzm/44acmx6ah/New%20stock%202.jpg');"></div>
+                            <div class="product-content">
+                                <h3>MG Paper Rolls</h3>
+                                <p>High-Strength Kraft Paper for Demanding Packaging Applications</p>
+                                <ul>
+                                    <li>Perfect for corrugated boxes</li>
+                                    <li>Superior tear resistance</li>
+                                    <li>Custom sizes available</li>
+                                    <li>Food-grade quality options</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3: Corrugated Paper -->
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-img" style="background-image: url('https://uploads.onecompiler.io/44acmuzzm/44af24zfe/corrugated%20paper.jpg');"></div>
+                            <div class="product-content">
+                                <h3>Corrugated Paper</h3>
+                                <p>Specialized Paper for Corrugated Box Manufacturing</p>
+                                <ul>
+                                    <li>Designed for corrugated box production</li>
+                                    <li>Excellent printability</li>
+                                    <li>Various flute types supported</li>
+                                    <li>Bulk orders available</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 4: Additional Image - Paper Roll Stack -->
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-img" style="background-image: url('https://uploads.onecompiler.io/44acmuzzm/44acmx6ah/paper%20roll%203D.png');"></div>
+                            <div class="product-content">
+                                <h3>Premium Paper Rolls</h3>
+                                <p>High-quality paper rolls suitable for all packaging needs</p>
+                                <ul>
+                                    <li>Consistent thickness</li>
+                                    <li>Smooth surface finish</li>
+                                    <li>Eco-friendly materials</li>
+                                    <li>Competitive pricing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 5: Additional Kraft Rolls -->
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-img" style="background-image: url('https://uploads.onecompiler.io/44acmuzzm/44acmx6ah/New%20stock%202.jpg');"></div>
+                            <div class="product-content">
+                                <h3>Kraft Paper Rolls</h3>
+                                <p>Virgin kraft paper for superior packaging strength</p>
+                                <ul>
+                                    <li>High tear index</li>
+                                    <li>Moisture resistant</li>
+                                    <li>Available in various GSM</li>
+                                    <li>Ideal for industrial use</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="product-card">
-                    <div class="product-img" style="background-image: url('https://uploads.onecompiler.io/44acmuzzm/44acmx6ah/New%20stock%202.jpg');"></div>
-                    <div class="product-content">
-                        <h3>Kraft Paper Rolls</h3>
-                        <p>High-strength kraft paper for demanding packaging applications</p>
-                        <ul>
-                            <li>Perfect for corrugated boxes</li>
-                            <li>Superior tear resistance</li>
-                            <li>Custom sizes available</li>
-                            <li>Food-grade quality options</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-img" style="background-image: url('https://uploads.onecompiler.io/44acmuzzm/44af24zfe/corrugated%20paper.jpg');"></div>
-                    <div class="product-content">
-                        <h3>Corrugated Paper</h3>
-                        <p>Specialized paper for corrugated box manufacturing</p>
-                        <ul>
-                            <li>Designed for corrugated box production</li>
-                            <li>Excellent printability</li>
-                            <li>Various flute types supported</li>
-                            <li>Bulk orders available</li>
-                        </ul>
-                    </div>
-                </div>
+                <!-- Pagination (dots) -->
+                <div class="swiper-pagination"></div>
+                <!-- Navigation buttons (prev/next) -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </section>
@@ -809,7 +917,7 @@
         <div class="container">
             <div class="section-title">
                 <h2>Why Choose Us</h2>
-                <p>Your trusted paper trading partner in Pune</p>
+                <p>Your Trusted Paper Trading Partner in Pune</p>
             </div>
             <div class="benefits-grid">
                 <div class="benefit-card">
@@ -899,7 +1007,7 @@
                         </div>
                         <div>
                             <h4>Address</h4>
-                            <p>Royal Paper, JQ96+V7G, Nimbalkar Nagar, Tathawade, Pimpri-Chinchwad, Pune, Maharashtra 411033</p>
+                            <p>Royal Paper, JQ96+V7G, Nimbalkar Nagar, Thergaon, Pimpri-Chinchwad, Pune, Maharashtra 411033</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -966,15 +1074,30 @@
                     <i class="fas fa-envelope"></i> royalservices365@gmail.com
                 </a>
             </div>
+
+            <!-- ============ NEW: SOCIAL ICONS (ONLY ICONS, CLICKABLE) ============ -->
+            <div class="social-icons">
+                <a href="https://www.instagram.com/royalpaper365" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/Royal.paper.365" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/royal-services-4909923a0" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
             
-            <p>&copy; 2023 Royal Paper. All rights reserved.</p>
             <div class="copyright">
+                <p>&copy; 2023 Royal Paper. All rights reserved.</p>
                 <p>Premium Brown Paper Rolls for Paper Bags, Pouches & Corrugated Boxes</p>
                 <p>Website by PACKLINE</p>
             </div>
         </div>
     </footer>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- JavaScript -->
     <script>
         // Mobile Menu Toggle
@@ -996,9 +1119,35 @@
             });
         });
 
+        // ============ SWIPER SLIDER INITIALIZATION (Sliding Photos) ============
+        const swiper = new Swiper('.productSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
         // ============ GOOGLE SHEETS INTEGRATION ============
-        // Using your Google Apps Script Web App for form submission
-        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwAv2K4JHIzgXcAwbR1cUvUkvv0jOsSpFdCq6R3mh7PQdqXLK5ZVki_FJzUp1zRDEEDDA/exec";
+        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbww9IkJeVgwk783F1hMQfV9mnAJ1uWHlNFBUAH-EKHnkfJkCAS8NbCjklzcBUTo7pCi8Q/exec";
         
         // Form submission handler
         document.getElementById('messageForm').addEventListener('submit', async function(e) {
@@ -1043,12 +1192,11 @@
                 // Send data to Google Sheets via Google Apps Script
                 const response = await fetch(GOOGLE_SCRIPT_URL, {
                     method: 'POST',
-                    mode: 'no-cors', // Important for Google Apps Script
+                    mode: 'no-cors',
                     body: formData
                 });
                 
-                // Since we use 'no-cors', we can't read response but assume success
-                showMessage('✓ Thank you! Your message has been sent successfully. We will contact you soon.', 'success');
+                showMessage('✅ Thank you! Your message has been sent successfully. We will contact you soon.', 'success');
                 
                 // Reset form
                 form.reset();
@@ -1056,7 +1204,6 @@
                 // Optional: Open WhatsApp with pre-filled message
                 const whatsappMsg = `New inquiry from: ${name}%0APhone: ${phone}%0AEmail: ${email}%0AMessage: ${message.substring(0, 100)}...`;
                 
-                // Show WhatsApp option after successful submission
                 setTimeout(() => {
                     if (confirm('Would you like to also send this via WhatsApp for faster response?')) {
                         window.open(`https://wa.me/919823213108?text=${whatsappMsg}`, '_blank');
@@ -1065,9 +1212,8 @@
                 
             } catch (error) {
                 console.error('Error:', error);
-                showMessage('✗ There was an error sending your message. Please try WhatsApp or call us directly.', 'error');
+                showMessage('⚠️ There was an error sending your message. Please try WhatsApp or call us directly.', 'error');
             } finally {
-                // Reset button
                 submitBtn.innerHTML = originalBtnText;
                 submitBtn.disabled = false;
             }
@@ -1079,10 +1225,8 @@
             formMessage.className = type === 'success' ? 'message-success' : 'message-error';
             formMessage.style.display = 'block';
             
-            // Scroll to message
             formMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
             
-            // Auto-hide after 5 seconds
             setTimeout(() => {
                 formMessage.style.display = 'none';
             }, 5000);
@@ -1123,7 +1267,3 @@
     </script>
 </body>
 </html>
-
-
-
-
