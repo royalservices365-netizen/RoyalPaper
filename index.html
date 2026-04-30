@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Royal Paper - Premium Brown Paper Rolls | Pune</title>
     
-    <!-- Google tag (gtag.js) - CORRECTLY PLACED -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-K16DWEG3S4"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -15,7 +15,7 @@
     </script>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Swiper CSS for sliding carousel -->
+    <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
         /* Base Styles & Reset */
@@ -153,1127 +153,259 @@
             transform: translateX(-50%);
         }
 
-        /* ============ HERO SECTION WITH BACKGROUND ============ */
+        /* Hero Section */
         .hero {
-    background:
-        linear-gradient(
-            rgba(255, 248, 240, 0.45),
-            rgba(255, 248, 240, 0.55)
-        ),
-        url('https://uploads.onecompiler.io/44acmuzzm/44acmx6ah/paper%20roll%203D.png');
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 180px 0 100px;
-    text-align: center;
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-
-        .hero-content {
-            width: 100%;
-        }
-
-        .hero h1 {
-            font-size: 3.2rem;
-            margin-bottom: 1.5rem;
-            color: #2c3e50;
-            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
-            line-height: 1.2;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto 2rem;
-            color: #444;
-            background: rgba(255, 255, 255, 0.7);
-            display: inline-block;
-            padding: 15px 25px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 30px;
-        }
-        /* ============ END HERO SECTION ============ */
-
-        /* Floating Contact Buttons */
-        .floating-buttons {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            z-index: 1000;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .floating-btn {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.8rem;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .floating-btn:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
-        }
-
-        .whatsapp-float {
-            background-color: #25D366;
-        }
-
-        .email-float {
-            background-color: #EA4335;
-        }
-
-        .phone-float {
-            background-color: #8B4513;
-        }
-
-        /* Header & Navigation */
-        header {
-            background-color: white;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 0;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #8B4513;
-        }
-
-        .logo span {
-            color: #2c3e50;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            font-weight: 600;
-            color: #444;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #8B4513;
-        }
-
-        .mobile-menu-btn {
-            display: none;
-            font-size: 1.5rem;
-            background: none;
-            border: none;
-            cursor: pointer;
-            color: #8B4513;
-        }
-
-        /* About Section */
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .about-stats {
-            display: flex;
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .stat-box {
-            text-align: center;
-            padding: 20px;
-            background: #f5f0eb;
-            border-radius: 8px;
-            flex: 1;
-        }
-
-        .stat-box h3 {
-            font-size: 2.5rem;
-            color: #8B4513;
-            margin-bottom: 5px;
-        }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .feature-card {
-            background: white;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .feature-icon {
-            font-size: 2.5rem;
-            color: #8B4513;
-            margin-bottom: 1rem;
-        }
-
-        /* Products Section - Swiper Carousel */
-        .products {
-            background-color: #f5f0eb;
-        }
-
-        .swiper {
-            width: 100%;
-            padding: 20px 10px 60px;
-        }
-
-        .swiper-slide {
-            height: auto;
-        }
-
-        .product-card {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .product-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .product-img {
-            height: 220px;
-            background-size: cover;
+            background: linear-gradient(rgba(255, 248, 240, 0.45), rgba(255, 248, 240, 0.55)), url('https://uploads.onecompiler.io/44acmuzzm/44acmx6ah/paper%20roll%203D.png');
+            background-size: 100%;
             background-position: center;
             background-repeat: no-repeat;
-            flex-shrink: 0;
+            padding: 180px 0 100px;
+            text-align: center;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
         }
 
-        .product-content {
-            padding: 25px;
-            flex-grow: 1;
-        }
+        .hero-content { width: 100%; }
+        .hero h1 { font-size: 3.2rem; margin-bottom: 1.5rem; color: #2c3e50; text-shadow: 1px 1px 3px rgba(255,255,255,0.8); }
+        .hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto 2rem; color: #444; background: rgba(255,255,255,0.7); display: inline-block; padding: 15px 25px; border-radius: 8px; }
+        .hero-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px; }
 
-        .swiper-pagination-bullet-active {
-            background: #8B4513 !important;
-        }
+        /* Floating Buttons */
+        .floating-buttons { position: fixed; bottom: 30px; right: 30px; z-index: 1000; display: flex; flex-direction: column; gap: 15px; }
+        .floating-btn { width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.8rem; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: transform 0.3s ease; }
+        .floating-btn:hover { transform: scale(1.1); }
+        .whatsapp-float { background-color: #25D366; }
+        .email-float { background-color: #EA4335; }
+        .phone-float { background-color: #8B4513; }
 
-        .swiper-button-next,
-        .swiper-button-prev {
-            color: #8B4513 !important;
-            background: rgba(255,255,255,0.8);
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
+        /* Header */
+        header { background-color: white; box-shadow: 0 2px 15px rgba(0,0,0,0.08); position: fixed; width: 100%; top: 0; z-index: 1000; }
+        .header-container { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; }
+        .logo { font-size: 1.8rem; font-weight: 700; color: #8B4513; }
+        .logo span { color: #2c3e50; }
+        .nav-links { display: flex; gap: 2rem; }
+        .nav-links a { font-weight: 600; color: #444; }
+        .nav-links a:hover { color: #8B4513; }
+        .mobile-menu-btn { display: none; font-size: 1.5rem; background: none; border: none; cursor: pointer; color: #8B4513; }
 
-        .swiper-button-next:after,
-        .swiper-button-prev:after {
-            font-size: 20px;
-            font-weight: bold;
-        }
+        /* About Section */
+        .about-content { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .about-stats { display: flex; gap: 2rem; margin-top: 2rem; }
+        .stat-box { text-align: center; padding: 20px; background: #f5f0eb; border-radius: 8px; flex: 1; }
+        .stat-box h3 { font-size: 2.5rem; color: #8B4513; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .feature-card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: center; transition: transform 0.3s ease; }
+        .feature-card:hover { transform: translateY(-10px); }
+        .feature-icon { font-size: 2.5rem; color: #8B4513; margin-bottom: 1rem; }
 
-        .swiper-button-next:hover,
-        .swiper-button-prev:hover {
-            background: white;
-        }
+        /* Products Swiper */
+        .products { background-color: #f5f0eb; }
+        .swiper { width: 100%; padding: 20px 10px 60px; }
+        .swiper-slide { height: auto; }
+        .product-card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.08); transition: transform 0.3s ease; height: 100%; display: flex; flex-direction: column; }
+        .product-card:hover { transform: translateY(-10px); }
+        .product-img { height: 220px; background-size: cover; background-position: center; background-repeat: no-repeat; }
+        .product-content { padding: 25px; flex-grow: 1; }
+        .swiper-pagination-bullet-active { background: #8B4513 !important; }
+        .swiper-button-next, .swiper-button-prev { color: #8B4513 !important; background: rgba(255,255,255,0.8); width: 40px; height: 40px; border-radius: 50%; }
+
+        /* Blog Section - Distinct Animation */
+        .blog-section { background: linear-gradient(135deg, #fff8f0 0%, #fef5e7 100%); }
+        .blog-swiper { width: 100%; padding: 15px 10px 60px; }
+        .blog-card { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.1); transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1); height: 100%; display: flex; flex-direction: column; cursor: pointer; border: 1px solid rgba(139,69,19,0.15); }
+        .blog-card:hover { transform: translateY(-15px) scale(1.02); box-shadow: 0 25px 45px rgba(139,69,19,0.2); }
+        .blog-img { height: 210px; background-size: cover; background-position: center; background-repeat: no-repeat; position: relative; transition: transform 0.5s ease; }
+        .blog-card:hover .blog-img { transform: scale(1.03); }
+        .blog-category { position: absolute; top: 15px; left: 15px; background: #8B4513; color: white; padding: 5px 12px; border-radius: 30px; font-size: 0.75rem; font-weight: bold; z-index: 2; }
+        .blog-content { padding: 25px; flex-grow: 1; background: white; }
+        .blog-title { font-size: 1.4rem; font-weight: 700; color: #2c3e50; margin-bottom: 12px; line-height: 1.35; transition: color 0.2s; }
+        .blog-card:hover .blog-title { color: #8B4513; }
+        .blog-excerpt { color: #5a5a5a; font-size: 0.95rem; margin-bottom: 20px; }
+        .read-more { display: inline-flex; align-items: center; gap: 8px; color: #8B4513; font-weight: 600; font-size: 0.9rem; }
+        .blog-card:hover .read-more { gap: 12px; }
+        .read-more i { transition: transform 0.2s; }
+        .blog-card:hover .read-more i { transform: translateX(4px); }
+        .blog-swiper .swiper-button-next, .blog-swiper .swiper-button-prev { color: #8B4513 !important; background: rgba(255,255,240,0.9); width: 44px; height: 44px; border-radius: 50%; }
 
         /* Why Choose Us */
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2.5rem;
-        }
-
-        .benefit-card {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
-            text-align: center;
-        }
-
-        .benefit-icon {
-            font-size: 3rem;
-            color: #8B4513;
-            margin-bottom: 1.5rem;
-        }
+        .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; }
+        .benefit-card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.06); text-align: center; }
+        .benefit-icon { font-size: 3rem; color: #8B4513; margin-bottom: 1.5rem; }
 
         /* Service Areas */
-        .service-areas {
-            background-color: #f5f0eb;
-        }
+        .service-areas { background-color: #f5f0eb; }
+        .areas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .area-card { background: white; padding: 30px; border-radius: 10px; text-align: center; }
 
-        .areas-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-
-        .area-card {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        }
-
-        .area-icon {
-            font-size: 2.5rem;
-            color: #8B4513;
-            margin-bottom: 1rem;
-        }
-
-        /* Contact Section */
-        .contact-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
-        }
-
-        .contact-info {
-            background: #f9f5f0;
-            padding: 30px;
-            border-radius: 10px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 1.5rem;
-        }
-
-        .contact-icon {
-            font-size: 1.5rem;
-            color: #8B4513;
-            margin-right: 15px;
-            margin-top: 5px;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 15px;
-            margin-bottom: 1.2rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-
-        .contact-form textarea {
-            height: 150px;
-            resize: vertical;
-        }
+        /* Contact */
+        .contact-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; }
+        .contact-info { background: #f9f5f0; padding: 30px; border-radius: 10px; }
+        .contact-item { display: flex; align-items: flex-start; margin-bottom: 1.5rem; }
+        .contact-icon { font-size: 1.5rem; color: #8B4513; margin-right: 15px; }
+        .contact-form input, .contact-form textarea { width: 100%; padding: 15px; margin-bottom: 1.2rem; border: 1px solid #ddd; border-radius: 5px; }
+        .contact-form textarea { height: 150px; }
 
         /* Footer */
-        footer {
-            background-color: #2c3e50;
-            color: #ccc;
-            padding: 50px 0 20px;
-            text-align: center;
-        }
+        footer { background-color: #2c3e50; color: #ccc; padding: 50px 0 20px; text-align: center; }
+        .footer-container { display: flex; flex-direction: column; align-items: center; }
+        .footer-logo { font-size: 2rem; font-weight: 700; color: #f5f0eb; margin-bottom: 1rem; }
+        .footer-contact { display: flex; gap: 30px; margin: 20px 0; flex-wrap: wrap; justify-content: center; }
+        .footer-contact a { display: flex; align-items: center; gap: 10px; color: #ddd; padding: 10px 20px; background: rgba(255,255,255,0.1); border-radius: 5px; }
+        .footer-contact a:hover { background: rgba(255,255,255,0.2); color: white; }
+        .social-icons { display: flex; gap: 25px; justify-content: center; margin: 25px 0 15px; }
+        .social-icons a { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; background: rgba(255,255,255,0.1); color: white; font-size: 1.8rem; transition: all 0.3s ease; }
+        .social-icons a:hover { background: #8B4513; transform: translateY(-5px); }
+        .copyright { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #444; font-size: 0.9rem; }
 
-        .footer-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+        /* Messages */
+        #formMessage { display: none; padding: 15px; margin-bottom: 20px; border-radius: 5px; text-align: center; }
+        .message-success { background-color: #d4edda; color: #155724; }
+        .message-error { background-color: #f8d7da; color: #721c24; }
 
-        .footer-logo {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #f5f0eb;
-            margin-bottom: 1rem;
-        }
-
-        .footer-contact {
-            display: flex;
-            gap: 30px;
-            margin: 20px 0;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .footer-contact a {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: #ddd;
-            padding: 10px 20px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 5px;
-        }
-
-        .footer-contact a:hover {
-            background: rgba(255,255,255,0.2);
-            color: white;
-        }
-
-        /* ============ NEW SOCIAL ICONS STYLES (Footer Only, Icons Only) ============ */
-        .social-icons {
-            display: flex;
-            gap: 25px;
-            justify-content: center;
-            align-items: center;
-            margin: 25px 0 15px;
-        }
-
-        .social-icons a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            font-size: 1.8rem;
-            transition: all 0.3s ease;
-            text-decoration: none;
-        }
-
-        .social-icons a:hover {
-            background: #8B4513;
-            color: white;
-            transform: translateY(-5px);
-        }
-
-        .copyright {
-            margin-top: 2rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid #444;
-            width: 100%;
-            font-size: 0.9rem;
-            color: #aaa;
-        }
-
-        /* Form Messages */
-        #formMessage {
-            display: none;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            text-align: center;
-        }
-
-        .message-success {
-            background-color: #d4edda;
-            color: #155724;
-            border: 1px solid #c3e6cb;
-        }
-
-        .message-error {
-            background-color: #f8d7da;
-            color: #721c24;
-            border: 1px solid #f5c6cb;
-        }
-
-        /* Responsive Design */
+        /* Responsive */
         @media (max-width: 992px) {
-            .about-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .hero h1 {
-                font-size: 2.8rem;
-            }
+            .about-content { grid-template-columns: 1fr; gap: 2rem; }
+            .hero h1 { font-size: 2.8rem; }
         }
-
         @media (max-width: 768px) {
-            .mobile-menu-btn {
-                display: block;
-            }
-
-            .nav-links {
-                position: fixed;
-                top: 80px;
-                left: -100%;
-                width: 100%;
-                flex-direction: column;
-                background: white;
-                padding: 2rem;
-                box-shadow: 0 10px 15px rgba(0,0,0,0.1);
-                transition: left 0.3s ease;
-                z-index: 999;
-            }
-
-            .nav-links.active {
-                left: 0;
-            }
-
-            .hero h1 {
-                font-size: 2.3rem;
-            }
-            
-            .hero p {
-                font-size: 1.1rem;
-                padding: 12px 20px;
-            }
-
-            .section-title h2 {
-                font-size: 2rem;
-            }
-
-            .about-stats {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .floating-buttons {
-                bottom: 20px;
-                right: 20px;
-            }
-
-            .floating-btn {
-                width: 50px;
-                height: 50px;
-                font-size: 1.5rem;
-            }
-
-            .hero-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .hero-buttons .btn {
-                width: 100%;
-                max-width: 300px;
-            }
-
-            .swiper-button-next,
-            .swiper-button-prev {
-                display: none !important;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .hero p {
-                font-size: 1rem;
-                padding: 10px 15px;
-            }
-            
-            .hero {
-                padding: 150px 0 80px;
-                min-height: 90vh;
-            }
-            
-            .social-icons a {
-                width: 42px;
-                height: 42px;
-                font-size: 1.6rem;
-            }
+            .mobile-menu-btn { display: block; }
+            .nav-links { position: fixed; top: 80px; left: -100%; width: 100%; flex-direction: column; background: white; padding: 2rem; transition: left 0.3s ease; z-index: 999; }
+            .nav-links.active { left: 0; }
+            .hero h1 { font-size: 2.3rem; }
+            .floating-buttons { bottom: 20px; right: 20px; }
+            .floating-btn { width: 50px; height: 50px; font-size: 1.5rem; }
+            .swiper-button-next, .swiper-button-prev { display: none !important; }
         }
     </style>
 </head>
 <body>
-    <!-- Floating Contact Buttons -->
+    <!-- Floating Contact -->
     <div class="floating-buttons">
-        <a href="https://wa.me/919823213108?text=Hello%20Royal%20Paper%2C%20I%20have%20an%20inquiry%20about%20your%20paper%20products" 
-           class="floating-btn whatsapp-float" 
-           target="_blank"
-           title="Chat on WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="mailto:royalservices365@gmail.com?subject=Inquiry%20-%20Royal%20Paper%20Products&body=Hello%20Royal%20Paper%2C%0A%0AI%20am%20interested%20in%20your%20products.%20Please%20contact%20me%20with%20more%20details."
-           class="floating-btn email-float"
-           title="Send Email">
-            <i class="fas fa-envelope"></i>
-        </a>
-        <a href="tel:+919823213108" 
-           class="floating-btn phone-float"
-           title="Call Now">
-            <i class="fas fa-phone"></i>
-        </a>
+        <a href="https://wa.me/919823213108?text=Hello%20Royal%20Paper%2C%20I%20have%20an%20inquiry" class="floating-btn whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:royalservices365@gmail.com?subject=Inquiry" class="floating-btn email-float"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+919823213108" class="floating-btn phone-float"><i class="fas fa-phone"></i></a>
     </div>
 
-    <!-- Header & Navigation -->
+    <!-- Header -->
     <header>
         <div class="container header-container">
             <a href="#home" class="logo">Royal <span>Paper</span></a>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#why">Why Choose Us</a></li>
-                    <li><a href="#areas">Service Areas</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+            <nav><ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#products">Products</a></li>
+                <li><a href="#blogs">Blogs</a></li><li><a href="#why">Why Choose Us</a></li><li><a href="#areas">Service Areas</a></li><li><a href="#contact">Contact</a></li>
+            </ul></nav>
         </div>
     </header>
 
-    <!-- Hero Section with Background -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Premium MG & MF Paper Rolls for Paper Bags, Pouches & Corrugated Boxes</h1>
-                <p>7+ years of trusted supply in Pune. Consistent quality. Competitive pricing. Reliable delivery.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn">Get Your Quote</a>
-                    <a href="https://wa.me/919823213108?text=Hello%20Royal%20Paper%2C%20I%20need%20a%20quote%20for%20paper%20products" 
-                       class="btn btn-whatsapp" 
-                       target="_blank">
-                        <i class="fab fa-whatsapp"></i> Get Quote on WhatsApp
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Hero -->
+    <section class="hero" id="home"><div class="container"><div class="hero-content">
+        <h1>Premium MG & MF Paper Rolls for Paper Bags, Pouches & Corrugated Boxes</h1>
+        <p>7+ years of trusted supply in Pune. Consistent quality. Competitive pricing. Reliable delivery.</p>
+        <div class="hero-buttons"><a href="#contact" class="btn">Get Your Quote</a><a href="https://wa.me/919823213108" class="btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Get Quote on WhatsApp</a></div>
+    </div></div></section>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <div class="section-title">
-                <h2>About Us</h2>
-                <p>Leading Paper Trading Company Serving Pune's Packaging Industry</p>
-            </div>
-            <div class="about-content">
-                <div>
-                    <h3>Royal Paper - Your Trusted Partner</h3>
-                    <p>With 7+ years of experience in Paper Trading, Royal Paper has established itself as Pune's leading supplier of premium brown and kraft Paper Rolls for packaging manufacturers.</p>
-                    <p>Founded by Nitin Sable, we focus on delivering consistent quality, competitive pricing, and reliable delivery to paper bag, pouch, and corrugated box manufacturers across Maharashtra.</p>
-                    <div class="about-stats">
-                        <div class="stat-box">
-                            <h3>7+</h3>
-                            <p>Years Experience</p>
-                        </div>
-                        <div class="stat-box">
-                            <h3>500+</h3>
-                            <p>Happy Clients</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="feature-grid">
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-award"></i>
-                            </div>
-                            <h4>Quality Assurance</h4>
-                            <p>Every roll meets stringent quality standards</p>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-shipping-fast"></i>
-                            </div>
-                            <h4>Reliable Supply</h4>
-                            <p>Timely delivery across Pune and Pimpri-Chinchwad</p>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-user-tie"></i>
-                            </div>
-                            <h4>Leadership</h4>
-                            <p>Visionary leadership driving growth</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- About -->
+    <section id="about"><div class="container"><div class="section-title"><h2>About Us</h2><p>Leading Paper Trading Company Serving Pune's Packaging Industry</p></div>
+    <div class="about-content"><div><h3>Royal Paper - Your Trusted Partner</h3><p>With 7+ years of experience, Royal Paper is Pune's leading supplier of premium brown and kraft Paper Rolls for packaging manufacturers.</p><p>Founded by Nitin Sable, we deliver consistent quality, competitive pricing, and reliable delivery across Maharashtra.</p><div class="about-stats"><div class="stat-box"><h3>7+</h3><p>Years Experience</p></div><div class="stat-box"><h3>500+</h3><p>Happy Clients</p></div></div></div>
+    <div><div class="feature-grid"><div class="feature-card"><div class="feature-icon"><i class="fas fa-award"></i></div><h4>Quality Assurance</h4><p>Every roll meets stringent quality standards</p></div><div class="feature-card"><div class="feature-icon"><i class="fas fa-shipping-fast"></i></div><h4>Reliable Supply</h4><p>Timely delivery across Pune and Pimpri-Chinchwad</p></div><div class="feature-card"><div class="feature-icon"><i class="fas fa-user-tie"></i></div><h4>Leadership</h4><p>Visionary leadership driving growth</p></div></div></div></div></div></section>
 
-    <!-- Products Section with Swiper Slider (SLIDING PHOTOS) -->
-    <section class="products" id="products">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Products</h2>
-                <p>Premium MG Paper Rolls for Packaging Manufacturers</p>
-            </div>
-            <!-- Swiper Container -->
-            <div class="swiper productSwiper">
-                <div class="swiper-wrapper">
-                    <!-- Slide 1: Brown Paper Rolls -->
-                    <div class="swiper-slide">
-                        <div class="product-card">
-                            <div class="product-img" style="background-image: url('https://uploads.onecompiler.io/44acmuzzm/44af24zfe/Kraft%20Paper%20Rolls.png');"></div>
-                            <div class="product-content">
-                                <h3>Brown Paper Rolls</h3>
-                                <p>Premium quality MG and MF Kraft Paper for Eco-Friendly Packaging Solutions</p>
-                                <ul>
-                                    <li>Ideal for paper bags and pouches</li>
-                                    <li>Available in multiple GSM options</li>
-                                    <li>Standard roll widths: 12-48 inches</li>
-                                    <li>Excellent strength and durability</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide 2: MG Paper Rolls -->
-                    <div class="swiper-slide">
-                        <div class="product-card">
-                            <div class="product-img" style="background-image: url('https://uploads.onecompiler.io/44acmuzzm/44acmx6ah/New%20stock%202.jpg');"></div>
-                            <div class="product-content">
-                                <h3>MG Paper Rolls</h3>
-                                <p>High-Strength Kraft Paper for Demanding Packaging Applications</p>
-                                <ul>
-                                    <li>Perfect for corrugated boxes</li>
-                                    <li>Superior tear resistance</li>
-                                    <li>Custom sizes available</li>
-                                    <li>Food-grade quality options</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide 3: Corrugated Paper -->
-                    <div class="swiper-slide">
-                        <div class="product-card">
-                            <div class="product-img" style="background-image: url('https://uploads.onecompiler.io/44acmuzzm/44af24zfe/corrugated%20paper.jpg');"></div>
-                            <div class="product-content">
-                                <h3>Corrugated Paper</h3>
-                                <p>Specialized Paper for Corrugated Box Manufacturing</p>
-                                <ul>
-                                    <li>Designed for corrugated box production</li>
-                                    <li>Excellent printability</li>
-                                    <li>Various flute types supported</li>
-                                    <li>Bulk orders available</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide 4: Additional Image - Paper Roll Stack -->
-                    <div class="swiper-slide">
-                        <div class="product-card">
-                            <div class="product-img" style="background-image: url('https://uploads.onecompiler.io/44acmuzzm/44acmx6ah/paper%20roll%203D.png');"></div>
-                            <div class="product-content">
-                                <h3>Premium Paper Rolls</h3>
-                                <p>High-quality paper rolls suitable for all packaging needs</p>
-                                <ul>
-                                    <li>Consistent thickness</li>
-                                    <li>Smooth surface finish</li>
-                                    <li>Eco-friendly materials</li>
-                                    <li>Competitive pricing</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide 5: Additional Kraft Rolls -->
-                    <div class="swiper-slide">
-                        <div class="product-card">
-                            <div class="product-img" style="background-image: url('https://uploads.onecompiler.io/44acmuzzm/44acmx6ah/New%20stock%202.jpg');"></div>
-                            <div class="product-content">
-                                <h3>Kraft Paper Rolls</h3>
-                                <p>Virgin kraft paper for superior packaging strength</p>
-                                <ul>
-                                    <li>High tear index</li>
-                                    <li>Moisture resistant</li>
-                                    <li>Available in various GSM</li>
-                                    <li>Ideal for industrial use</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Pagination (dots) -->
-                <div class="swiper-pagination"></div>
-                <!-- Navigation buttons (prev/next) -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-        </div>
-    </section>
+    <!-- Products -->
+    <section class="products" id="products"><div class="container"><div class="section-title"><h2>Our Products</h2><p>Premium MG Paper Rolls for Packaging Manufacturers</p></div>
+    <div class="swiper productSwiper"><div class="swiper-wrapper">
+        <div class="swiper-slide"><div class="product-card"><div class="product-img" style="background-image: url('https://uploads.onecompiler.io/44acmuzzm/44af24zfe/Kraft%20Paper%20Rolls.png');"></div><div class="product-content"><h3>Brown Paper Rolls</h3><p>Premium MG and MF Kraft Paper for Eco-Friendly Packaging</p><ul><li>Ideal for paper bags and pouches</li><li>Multiple GSM options</li><li>Excellent strength</li></ul></div></div></div>
+        <div class="swiper-slide"><div class="product-card"><div class="product-img" style="background-image: url('https://uploads.onecompiler.io/44acmuzzm/44acmx6ah/New%20stock%202.jpg');"></div><div class="product-content"><h3>MG Paper Rolls</h3><p>High-Strength Kraft Paper for Demanding Applications</p><ul><li>Perfect for corrugated boxes</li><li>Superior tear resistance</li><li>Food-grade options</li></ul></div></div></div>
+        <div class="swiper-slide"><div class="product-card"><div class="product-img" style="background-image: url('https://uploads.onecompiler.io/44acmuzzm/44af24zfe/corrugated%20paper.jpg');"></div><div class="product-content"><h3>Corrugated Paper</h3><p>Specialized Paper for Corrugated Box Manufacturing</p><ul><li>Excellent printability</li><li>Various flute types</li><li>Bulk orders available</li></ul></div></div></div>
+        <div class="swiper-slide"><div class="product-card"><div class="product-img" style="background-image: url('https://uploads.onecompiler.io/44acmuzzm/44acmx6ah/paper%20roll%203D.png');"></div><div class="product-content"><h3>Premium Paper Rolls</h3><p>High-quality paper rolls for all packaging needs</p><ul><li>Consistent thickness</li><li>Smooth finish</li><li>Eco-friendly</li></ul></div></div></div>
+    </div><div class="swiper-pagination"></div><div class="swiper-button-next"></div><div class="swiper-button-prev"></div></div></div></section>
+
+    <!-- BLOG SECTION with custom images and links (removed India’s Shift to Paper) -->
+    <section class="blog-section" id="blogs"><div class="container"><div class="section-title"><h2>Latest Insights & Blogs</h2><p>Expert articles on sustainable packaging, paper innovation & industry trends</p></div>
+    <div class="swiper blogSwiper"><div class="swiper-wrapper">
+        <!-- Blog 1: Future of Paper Packaging Industry -->
+        <div class="swiper-slide"><div class="blog-card" onclick="window.open('https://vhxhtrsfhydh.blogspot.com/2026/04/future-of-paper-packaging-industry.html', '_blank')"><div class="blog-img" style="background-image: url('https://i.postimg.cc/q6CpWBH5/Gemini-Generated-Image-ucvxrzucvxrzucvx.png');"><div class="blog-category">Future Trends</div></div><div class="blog-content"><h3 class="blog-title">Future of Paper Packaging Industry</h3><p class="blog-excerpt">Explore how sustainable materials and circular economy models are reshaping packaging across India and beyond.</p><div class="read-more">Read Full Story <i class="fas fa-arrow-right"></i></div></div></div></div>
+
+        <!-- Blog 2: Difference Between Virgin and Semi-Virgin Paper -->
+        <div class="swiper-slide"><div class="blog-card" onclick="window.open('https://vhxhtrsfhydh.blogspot.com/2026/04/difference-between-virgin-and-semi.html', '_blank')"><div class="blog-img" style="background-image: url('https://i.postimg.cc/Ty5NV8Rs/Gemini-Generated-Image-hk4yu6hk4yu6hk4y.png');"><div class="blog-category">Material Science</div></div><div class="blog-content"><h3 class="blog-title">Difference Between Virgin & Semi Virgin Paper</h3><p class="blog-excerpt">Understanding fiber quality, strength characteristics, and cost benefits for packaging manufacturers.</p><div class="read-more">Read Full Story <i class="fas fa-arrow-right"></i></div></div></div></div>
+
+        <!-- Blog 3: How to Choose the Right GSM Paper Roll -->
+        <div class="swiper-slide"><div class="blog-card" onclick="window.open('https://vhxhtrsfhydh.blogspot.com/2026/04/how-to-choose-right-gsm-paper-roll-for.html', '_blank')"><div class="blog-img" style="background-image: url('https://i.postimg.cc/N2y0Y7Rs/Gemini-Generated-Image-h4q4zch4q4zch4q4.png');"><div class="blog-category">Buying Guide</div></div><div class="blog-content"><h3 class="blog-title">How to Choose the Right GSM Paper Roll</h3><p class="blog-excerpt">A practical guide to selecting grammage for paper bags, pouches, and corrugated boxes.</p><div class="read-more">Read Full Story <i class="fas fa-arrow-right"></i></div></div></div></div>
+
+        <!-- Blog 4: Sustainable Packaging Trends in India (New image) -->
+        <div class="swiper-slide"><div class="blog-card" onclick="window.open('https://vhxhtrsfhydh.blogspot.com/2026/04/sustainable-packaging-trends-in-india.html', '_blank')"><div class="blog-img" style="background-image: url('https://i.postimg.cc/hJQZLFS9/Gemini-Generated-Image-js0ru6js0ru6js0r.png');"><div class="blog-category">Eco-Innovation</div></div><div class="blog-content"><h3 class="blog-title">Sustainable Packaging Trends in India</h3><p class="blog-excerpt">From plastic bans to compostable papers — latest movements driving the green revolution.</p><div class="read-more">Read Full Story <i class="fas fa-arrow-right"></i></div></div></div></div>
+
+        <!-- Blog 5: NEW - Paper Roll for Paper Bag Manufacturing: Complete Guide -->
+        <div class="swiper-slide"><div class="blog-card" onclick="window.open('https://vhxhtrsfhydh.blogspot.com/2026/04/paper-roll-for-paper-bag-manufacturing.html', '_blank')"><div class="blog-img" style="background-image: url('https://i.postimg.cc/Z0qBV6BF/Gemini-Generated-Image-vkpft0vkpft0vkpf.png');"><div class="blog-category">Manufacturing Guide</div></div><div class="blog-content"><h3 class="blog-title">Paper Roll for Paper Bag Manufacturing: Complete Guide</h3><p class="blog-excerpt">Everything you need to know about selecting the right paper roll for durable, eco-friendly paper bag production.</p><div class="read-more">Read Full Story <i class="fas fa-arrow-right"></i></div></div></div></div>
+    </div><div class="swiper-pagination"></div><div class="swiper-button-next"></div><div class="swiper-button-prev"></div></div></div></section>
 
     <!-- Why Choose Us -->
-    <section id="why">
-        <div class="container">
-            <div class="section-title">
-                <h2>Why Choose Us</h2>
-                <p>Your Trusted Paper Trading Partner in Pune</p>
-            </div>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-history"></i>
-                    </div>
-                    <h3>7+ Years of Experience</h3>
-                    <p>Deep industry knowledge serving paper manufacturers across Pune. We understand your specific requirements and deliver solutions that work.</p>
-                    <ul>
-                        <li>Expert technical support</li>
-                        <li>Industry-specific solutions</li>
-                        <li>Proven track record</li>
-                    </ul>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-clipboard-check"></i>
-                    </div>
-                    <h3>Quality Assurance</h3>
-                    <p>Every roll undergoes strict quality checks to ensure consistency and reliability.</p>
-                    <p>We maintain high standards throughout our supply chain to deliver premium products every time.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h3>24/7 Customer Support</h3>
-                    <p>Round-the-clock assistance for all your paper requirements. Our team is always ready to help with orders, technical queries, or delivery updates.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="why"><div class="container"><div class="section-title"><h2>Why Choose Us</h2><p>Your Trusted Paper Trading Partner in Pune</p></div><div class="benefits-grid">
+        <div class="benefit-card"><div class="benefit-icon"><i class="fas fa-history"></i></div><h3>7+ Years of Experience</h3><p>Deep industry knowledge serving manufacturers across Pune.</p><ul><li>Expert technical support</li><li>Industry-specific solutions</li></ul></div>
+        <div class="benefit-card"><div class="benefit-icon"><i class="fas fa-clipboard-check"></i></div><h3>Quality Assurance</h3><p>Every roll undergoes strict quality checks for consistency and reliability.</p></div>
+        <div class="benefit-card"><div class="benefit-icon"><i class="fas fa-headset"></i></div><h3>24/7 Customer Support</h3><p>Round-the-clock assistance for all your paper requirements.</p></div>
+    </div></div></section>
 
     <!-- Service Areas -->
-    <section class="service-areas" id="areas">
-        <div class="container">
-            <div class="section-title">
-                <h2>Service Areas</h2>
-                <p>Serving Maharashtra's packaging industry</p>
-            </div>
-            <div class="areas-grid">
-                <div class="area-card">
-                    <div class="area-icon">
-                        <i class="fas fa-city"></i>
-                    </div>
-                    <h3>Pune</h3>
-                    <p>Complete Pune city coverage with next-day delivery</p>
-                </div>
-                <div class="area-card">
-                    <div class="area-icon">
-                        <i class="fas fa-industry"></i>
-                    </div>
-                    <h3>Pimpri-Chinchwad</h3>
-                    <p>Specialized service for industrial areas and manufacturing hubs</p>
-                </div>
-                <div class="area-card">
-                    <div class="area-icon">
-                        <i class="fas fa-map-marked-alt"></i>
-                    </div>
-                    <h3>Maharashtra</h3>
-                    <p>Extended coverage across Maharashtra with reliable logistics</p>
-                </div>
-                <div class="area-card">
-                    <div class="area-icon">
-                        <i class="fas fa-truck-fast"></i>
-                    </div>
-                    <h3>Fast Delivery</h3>
-                    <p>Same-day delivery available for urgent orders within Pune city limits</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section class="service-areas" id="areas"><div class="container"><div class="section-title"><h2>Service Areas</h2><p>Serving Maharashtra's packaging industry</p></div><div class="areas-grid">
+        <div class="area-card"><div class="area-icon"><i class="fas fa-city"></i></div><h3>Pune</h3><p>Complete Pune city coverage with next-day delivery</p></div>
+        <div class="area-card"><div class="area-icon"><i class="fas fa-industry"></i></div><h3>Pimpri-Chinchwad</h3><p>Specialized service for industrial areas</p></div>
+        <div class="area-card"><div class="area-icon"><i class="fas fa-map-marked-alt"></i></div><h3>Maharashtra</h3><p>Extended coverage across Maharashtra with reliable logistics</p></div>
+        <div class="area-card"><div class="area-icon"><i class="fas fa-truck-fast"></i></div><h3>Fast Delivery</h3><p>Same-day delivery available for urgent orders</p></div>
+    </div></div></section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Contact Us</h2>
-                <p>Get in touch for premium paper solutions</p>
-            </div>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Get in Touch</h3>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h4>Address</h4>
-                            <p>Royal Paper, JQ96+V7G, Nimbalkar Nagar, Thergaon, Pimpri-Chinchwad, Pune, Maharashtra 411033</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>9823213108 / 9823213124</p>
-                            <div class="contact-btn-group">
-                                <a href="tel:+919823213108" class="btn">Call Now</a>
-                                <a href="https://wa.me/919823213108?text=Hello%20Royal%20Paper%2C%20I%20want%20to%20talk%20about%20your%20products" 
-                                   class="btn btn-whatsapp" target="_blank">
-                                    <i class="fab fa-whatsapp"></i> WhatsApp
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h4>Email</h4>
-                            <p>royalservices365@gmail.com</p>
-                            <a href="mailto:royalservices365@gmail.com?subject=Inquiry%20-%20Royal%20Paper%20Products&body=Hello%20Royal%20Paper%2C%0A%0AI%20am%20interested%20in%20your%20products.%20Please%20contact%20me%20with%20more%20details." 
-                               class="btn btn-email">
-                                <i class="fas fa-envelope"></i> Send Email
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <h3>Send Us a Message</h3>
-                    <div id="formMessage"></div>
-                    <form id="messageForm">
-                        <input type="text" id="name" name="name" placeholder="Your Name *" required>
-                        <input type="email" id="email" name="email" placeholder="Your Email *" required>
-                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number *" required>
-                        <textarea id="message" name="message" placeholder="Your Message *" required></textarea>
-                        <button type="submit" class="btn" id="submitBtn">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Contact -->
+    <section id="contact"><div class="container"><div class="section-title"><h2>Contact Us</h2><p>Get in touch for premium paper solutions</p></div>
+    <div class="contact-container"><div class="contact-info"><h3>Get in Touch</h3>
+        <div class="contact-item"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><div><h4>Address</h4><p>Royal Paper, JQ96+V7G, Nimbalkar Nagar, Thergaon, Pimpri-Chinchwad, Pune, Maharashtra 411033</p></div></div>
+        <div class="contact-item"><div class="contact-icon"><i class="fas fa-phone"></i></div><div><h4>Phone</h4><p>9823213108 / 9823213124</p><div class="contact-btn-group"><a href="tel:+919823213108" class="btn">Call Now</a><a href="https://wa.me/919823213108" class="btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></div></div></div>
+        <div class="contact-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div><h4>Email</h4><p>royalservices365@gmail.com</p><a href="mailto:royalservices365@gmail.com" class="btn btn-email"><i class="fas fa-envelope"></i> Send Email</a></div></div>
+    </div>
+    <div class="contact-form"><h3>Send Us a Message</h3><div id="formMessage"></div>
+    <form id="messageForm"><input type="text" id="name" placeholder="Your Name *" required><input type="email" id="email" placeholder="Your Email *" required><input type="tel" id="phone" placeholder="Your Phone Number *" required><textarea id="message" placeholder="Your Message *" required></textarea><button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Send Message</button></form></div></div></div></section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container footer-container">
-            <div class="footer-logo">Royal Paper</div>
-            <p>Your trusted partner for premium brown paper rolls in Pune</p>
-            
-            <div class="footer-contact">
-                <a href="tel:+919823213108">
-                    <i class="fas fa-phone"></i> 9823213108
-                </a>
-                <a href="https://wa.me/919823213108" target="_blank">
-                    <i class="fab fa-whatsapp"></i> WhatsApp Chat
-                </a>
-                <a href="mailto:royalservices365@gmail.com">
-                    <i class="fas fa-envelope"></i> royalservices365@gmail.com
-                </a>
-            </div>
+    <footer><div class="container footer-container"><div class="footer-logo">Royal Paper</div><p>Your trusted partner for premium brown paper rolls in Pune</p><div class="footer-contact"><a href="tel:+919823213108"><i class="fas fa-phone"></i> 9823213108</a><a href="https://wa.me/919823213108" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Chat</a><a href="mailto:royalservices365@gmail.com"><i class="fas fa-envelope"></i> royalservices365@gmail.com</a></div><div class="social-icons"><a href="https://www.instagram.com/royalpaper365" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://www.facebook.com/Royal.paper.365" target="_blank"><i class="fab fa-facebook-f"></i></a><a href="https://www.linkedin.com/in/royal-services-4909923a0" target="_blank"><i class="fab fa-linkedin-in"></i></a></div><div class="copyright"><p>&copy; 2023 Royal Paper. All rights reserved.</p><p>Website by PACKLINE</p></div></div></footer>
 
-            <!-- ============ NEW: SOCIAL ICONS (ONLY ICONS, CLICKABLE) ============ -->
-            <div class="social-icons">
-                <a href="https://www.instagram.com/royalpaper365" target="_blank" title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/Royal.paper.365" target="_blank" title="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/royal-services-4909923a0" target="_blank" title="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; 2023 Royal Paper. All rights reserved.</p>
-                <p>Premium Brown Paper Rolls for Paper Bags, Pouches & Corrugated Boxes</p>
-                <p>Website by PACKLINE</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- JavaScript -->
     <script>
-        // Mobile Menu Toggle
+        // Mobile menu
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const navLinks = document.getElementById('navLinks');
-
         mobileMenuBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
-                ? '<i class="fas fa-times"></i>' 
-                : '<i class="fas fa-bars"></i>';
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
         });
+        document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', () => { navLinks.classList.remove('active'); mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>'; }));
 
-        // Close menu when clicking a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-            });
-        });
-
-        // ============ SWIPER SLIDER INITIALIZATION (Sliding Photos) ============
-        const swiper = new Swiper('.productSwiper', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                },
-                992: {
-                    slidesPerView: 3,
-                },
-            },
-        });
-
-        // ============ GOOGLE SHEETS INTEGRATION ============
-        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbww9IkJeVgwk783F1hMQfV9mnAJ1uWHlNFBUAH-EKHnkfJkCAS8NbCjklzcBUTo7pCi8Q/exec";
+        // Products Swiper
+        new Swiper('.productSwiper', { slidesPerView: 1, spaceBetween: 30, loop: true, autoplay: { delay: 4000, disableOnInteraction: false }, pagination: { el: '.swiper-pagination', clickable: true }, navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }, breakpoints: { 640: { slidesPerView: 2 }, 992: { slidesPerView: 3 } } });
         
-        // Form submission handler
+        // Blog Swiper (5 slides, distinct animation)
+        new Swiper('.blogSwiper', { slidesPerView: 1, spaceBetween: 30, loop: true, autoplay: { delay: 5000, disableOnInteraction: false }, pagination: { el: '.swiper-pagination', clickable: true }, navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }, breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } } });
+        
+        // Google Sheets form handler
+        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbww9IkJeVgwk783F1hMQfV9mnAJ1uWHlNFBUAH-EKHnkfJkCAS8NbCjklzcBUTo7pCi8Q/exec";
         document.getElementById('messageForm').addEventListener('submit', async function(e) {
             e.preventDefault();
-            
-            const form = e.target;
-            const submitBtn = document.getElementById('submitBtn');
-            const formMessage = document.getElementById('formMessage');
-            const originalBtnText = submitBtn.innerHTML;
-            
-            // Validate required fields
             const name = document.getElementById('name').value.trim();
             const email = document.getElementById('email').value.trim();
             const phone = document.getElementById('phone').value.trim();
             const message = document.getElementById('message').value.trim();
-            
-            if (!name || !email || !phone || !message) {
-                showMessage('Please fill all required fields.', 'error');
-                return;
-            }
-            
-            // Validate email
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                showMessage('Please enter a valid email address.', 'error');
-                return;
-            }
-            
-            // Show loading state
+            if (!name || !email || !phone || !message) { showMessage('Please fill all required fields.', 'error'); return; }
+            const submitBtn = e.target.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
             submitBtn.disabled = true;
-            
-            // Prepare form data
             const formData = new FormData();
             formData.append('timestamp', new Date().toISOString());
-            formData.append('name', name);
-            formData.append('email', email);
-            formData.append('phone', phone);
-            formData.append('message', message);
-            
-            try {
-                // Send data to Google Sheets via Google Apps Script
-                const response = await fetch(GOOGLE_SCRIPT_URL, {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    body: formData
-                });
-                
-                showMessage('✅ Thank you! Your message has been sent successfully. We will contact you soon.', 'success');
-                
-                // Reset form
-                form.reset();
-                
-                // Optional: Open WhatsApp with pre-filled message
-                const whatsappMsg = `New inquiry from: ${name}%0APhone: ${phone}%0AEmail: ${email}%0AMessage: ${message.substring(0, 100)}...`;
-                
-                setTimeout(() => {
-                    if (confirm('Would you like to also send this via WhatsApp for faster response?')) {
-                        window.open(`https://wa.me/919823213108?text=${whatsappMsg}`, '_blank');
-                    }
-                }, 1000);
-                
-            } catch (error) {
-                console.error('Error:', error);
-                showMessage('⚠️ There was an error sending your message. Please try WhatsApp or call us directly.', 'error');
-            } finally {
-                submitBtn.innerHTML = originalBtnText;
-                submitBtn.disabled = false;
-            }
+            formData.append('name', name); formData.append('email', email); formData.append('phone', phone); formData.append('message', message);
+            try { await fetch(GOOGLE_SCRIPT_URL, { method: 'POST', mode: 'no-cors', body: formData }); showMessage('✅ Thank you! Your message has been sent successfully.', 'success'); e.target.reset(); } catch (error) { showMessage('⚠️ Error sending message. Please try WhatsApp or call.', 'error'); } finally { submitBtn.innerHTML = originalText; submitBtn.disabled = false; }
         });
-        
-        function showMessage(text, type) {
-            const formMessage = document.getElementById('formMessage');
-            formMessage.textContent = text;
-            formMessage.className = type === 'success' ? 'message-success' : 'message-error';
-            formMessage.style.display = 'block';
-            
-            formMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            
-            setTimeout(() => {
-                formMessage.style.display = 'none';
-            }, 5000);
-        }
-        
-        // WhatsApp click tracking
-        document.querySelectorAll('a[href*="whatsapp"]').forEach(link => {
-            link.addEventListener('click', function() {
-                console.log('WhatsApp link clicked:', this.href);
-            });
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                if(this.getAttribute('href') === '#') return;
-                
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if(targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        // Test Google Script connection on page load
-        window.addEventListener('load', function() {
-            console.log('Testing Google Script connection...');
-            fetch(GOOGLE_SCRIPT_URL)
-                .then(response => console.log('Google Script is accessible'))
-                .catch(error => console.warn('Google Script connection test failed:', error));
-        });
+        function showMessage(text, type) { const msgDiv = document.getElementById('formMessage'); msgDiv.textContent = text; msgDiv.className = type === 'success' ? 'message-success' : 'message-error'; msgDiv.style.display = 'block'; setTimeout(() => { msgDiv.style.display = 'none'; }, 5000); }
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => anchor.addEventListener('click', function(e) { if(this.getAttribute('href') === '#') return; e.preventDefault(); const target = document.querySelector(this.getAttribute('href')); if(target) window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' }); }));
     </script>
 </body>
 </html>
